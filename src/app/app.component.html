@@ -1,0 +1,4 @@
+<div class="container" *ngIf='squares'>
+  <app-square *ngFor='let suaqre of squares' [isBlue]='suaqre' (changeItem)='addAnswer($event)'></app-square>
+</div>
+<button (click)='submit()'>submit</button>

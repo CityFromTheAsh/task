@@ -1,0 +1,4 @@
+<div class="square" (click)="selectThis()"
+    [ngClass]='isActive ? "active" : ""'>
+    <div class="color" *ngIf='style' [ngStyle]='style'></div>
+</div>
